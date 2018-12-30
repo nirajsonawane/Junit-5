@@ -5,14 +5,13 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-public class SimpleParameterizedTest {
+public class DisplayNameForParameterizedTest {
 
-	@ParameterizedTest
+	@ParameterizedTest(name = "withSomeName #{index} with Value [{arguments}]")
 	@ValueSource(strings = { "Hello", "World" })
-	void withSomeValues(String word) {
+	void withSomeName(String word) {
 		System.out.println(word);
 		assertNotNull(word);
 
 	}
-
 }

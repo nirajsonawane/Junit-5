@@ -1,6 +1,6 @@
 package com.niraj;
 
-public class Emp {
+public class Person {
 
 	String firstName;
 	String lastName;
@@ -16,7 +16,7 @@ public class Emp {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	public Emp(String firstName, String lastName) {
+	public Person(String firstName, String lastName) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
